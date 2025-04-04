@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexium OS</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
@@ -14,6 +15,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#download">Download</a></li>
+            <li><a href="#dependencies">Dependencies</a></li>
             <li><a href="#building">Building</a></li>
             <li><a href="#running">Running</a></li>
             <li><a href="https://github.com/HexiumOS/Hexium" target="_blank">GitHub</a></li>
@@ -38,15 +40,17 @@
 
     <h2 id="download">Download</h2>
     <p>You can download the project from the <a href="https://github.com/HexiumOS/Hexium" target="_blank">GitHub repository.</a></p>
-    
+
+    <h2 id="dependencies">Dependencies</h2>
+    <p>These need to be installed on your system before you can build it. Either compile it from source or install it using your preferred package manager.</p>
+    <p><code>Xorriso</code></p>
+
     <h2 id="building">Building</h2>
     <p>This project requires a nightly version of Rust because it uses some unstable features. At least nightly <em>2020-07-15</em> is required for building. You might need to run <code>rustup update nightly --force</code> to update to the latest nightly even if some components such as <code>rustfmt</code> are missing it.</p>
+    
     <p>You can build the project by running:</p>
-    <p>For Linux</p>
-    <pre><code>make setup</code></pre>
+    <p><strong>For Linux based operating systems</strong></p>
     <pre><code>make</code></pre>
-    <p>For Windows</p>
-    <pre><code>make.bat</code></pre>
     <p>This creates a bootable disk image in the root directory.</p>
     <p>Please file an issue if you have any problems.</p>
     
@@ -57,10 +61,7 @@
     <pre><code>make run</code></pre>
     <p><strong>For Linux (not using QEMU) <strong>NOT RECOMMENDED</strong></strong></p>
     <p>You can use the ISO image produced by <code>make</code> to boot it using a different virtual machine tool.</p>
-    <p><strong>For Windows <strong>THIS IS WHAT WILL BE USED, WHEN IT WORKS!!!</strong></strong></p>
-    <p>You can use the ISO image produced by <code>make.bat</code> to boot it using a different virtual machine tool.</p>
-    <p>We recommend either <strong><a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a></strong> or <strong><a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v?pivots=windows" target="_blank">Hyper-V Manager</a></strong>.</p>    
-
+   
 
     <footer><p><a href="/">Home</a></footer>
     </div>
